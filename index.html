@@ -1,126 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Personal Website</title>
-    
-        <!--using FontAwesome---------------->
-      <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-     
-</head>
-<body>
-    <section>
-        <section>
-            <!--navigation------------------------->
-            <nav>
-            <!--logo-->
-            <a href="#" class="logo"> ~AR~ </a>
-            <!--menu-->
-            <ul>
-            <li><a href="#" class="active">HOME</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">CONTACT </a></li>
-            
-            </ul>
-           </nav>
-           <!--text----------------------->
-		<div class="text-container">
-			<p>Hello,</p>
-		    <p>I'M ANGELITO</p>
-			<p> <br>Web Developer</p>
-			<button  class="hire-btn">Hire me</button>
-			<button class="down-cv">Download CV</button>
-		</div>
-	<!--model---------------------->
-	<img  src="./images/IMG_1899.JPG" class="model" alt="model"> 
-          
-          </section>
-          <div class="about-container">
-            <!--img-->
-                <img src="./images/IMG_1643.JPG">
-            <!--about-me-text-->
-                <div class="about-text">
-                <p>About Me</p>
-                <p>Devolper & Designer</p>
-                <p>Hello,My name is Angelito Roderos. I am a Devolper and also a Designer.If you have any Project or if you want make a software for your bussiness contact me.I make as soon as possible.You really like my work,if you don't i change this until you like I give you satiscfaction result.</p>
-                
-                <button>Hire Me</button>
-                <button>Download CV</button>
-                </div>
-            </div>
-             <!--services-container---------------------------->
-	<div class="services ">
-		<!--text-->
-		<div class="services-text ">
-	<p>Services</p>
-	<p>Qualities Required</p>
-	<p>if you want make a software for your bussiness conatact me.I make as soon as possibale.You really like my work, if you don&#8217;t i change this until you like if you want make a software for your bussniess conatact me.I make as soon</p>
-			</div>
-		<div class="box-container">
-		<!--1------------->
-			<div class="box-1">
-			<span>1</span>
-			<p class="heading">Web Design</p>
-			<p class="details">if you want make a software for your bussiness contact me.I make as soon as possible.You really like my work, if you don't i change this until you like if you want.</p>
-			<button>Read More</button>
-			</div>
-	   <!--2------------->
-			<div class="box-2">
-			<span>2</span>
-			<p class="heading">Web Devoloment</p>
-			<p class="details">if you want make a software for your bussiness contact me.I make as soon as possible.You really like my work, if you don't i change this until you like if you want.</p>
-			<button>Read More</button>
-			</div>
-		<!--3------------->
-			<div class="box-3">
-			<span>3</span>
-			<p class="heading">Security SEO</p>
-			<p class="details">if you want make a software for your bussiness contact me.I make as soon as possible.You really like my work, if you don't i change this until you like if you want.</p>
-			<button>Read More</button>
-			</div>
-		</div>
-    </div>
-    <!--if you have any project in your mind contact me-->
-	<div class="contact-me">
-		<p>If You Have Any Project In Your Mind ?</p>
-		<button>Contact me</button>
-	</div>
-    <!--footer--------------->
- <footer>
-    <!--heading-->
- <p>Angelito Roderos</p>
-    <!--paragraph-->
-    <p>I make soon as possible.You really like my work,if you don't i change this until you like I give you satisfaction result</p>
-    <!--social-->
-   <div class="social-icons">
-   <a href="#"><i class="fab fa-facebook-f"></i></a>
-   <a href="#"><i class="fab fa-instagram"></i></a>
-   <a href="#"><i class="fab fa-twitter"></i></a>
-   </div>
-    <!--copyright-->
-    <p class="copyright">Copyright by Angelito Roderos</p>
-</footer>
-   <!--social-attach-bar-->
-   <div class="social">
-   <a href="#"><i class="fab fa-facebook-f"></i></a>
-   <a href="#"><i class="fab fa-instagram"></i></a>
-   <a href="#"><i class="fab fa-twitter"></i></a>
-   
-   </div>
-     <!--JQUery-------------------->
-<script type="text/javascript" src="js/JQuery.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    $('.toggle').click(function(){
-        $('.toggle').toggleClass('active')
-        $('nav').toggleClass('active')
-    })
-})
-</script>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-    
-    
-</body>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
